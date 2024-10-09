@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evaluación de Instalación de Paneles Solares</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-image: url('index02.jpg'); /* Cambia esta ruta a la ubicación de tu imagen */
+            background-size: cover; /* Para cubrir toda la pantalla */
+            background-position: center; /* Centrar la imagen */
+            color: white; /* Color por defecto del texto */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(51, 51, 51, 0.7); /* Fondo semitransparente para el menú */
+        }
+
+        li {
+            float: left;
+            border-right: 2px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 18px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: rgba(51, 51, 51, 0.7); /* Fondo semitransparente para el título */
+            padding: 10px; /* Espaciado interno */
+            border-radius: 8px; /* Esquinas redondeadas */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(241, 241, 241, 0.8); /* Fondo semitransparente para el pie de página */
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            color: black; /* Color del texto del pie de página */
+        }
+
+        .quote {
+            margin-top: 20px;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            background-color: rgba(249, 249, 249, 0.8); /* Fondo semitransparente para la cita */
+            color: black; /* Color del texto de la cita */
+        }
+
+        .w3-container {
+            margin-bottom: 15px; /* Espacio entre los módulos */
+            width: 50%; /* Reducir el ancho al 50% */
+            margin: 0 auto; /* Centrar el módulo */
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente para el contenido */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 8px; /* Esquinas redondeadas */
+        }
+
+        @media (max-width: 600px) {
+            .w3-container {
+                width: 90%; /* Aumentar el ancho en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html">INICIO</a></li>
+        <li><a href="informacion.html">DOCUMENTOS</a></li>
+        <li><a href="evaluacion.html">EVALUACION</a></li>
+        <li><a href="practicas.html">PRACTICAS</a></li>
+        <li><a href="simuladores.html">SIMULADORES</a></li>
+
+
+        <li style="float:right"><a href="acerca.html">ACERCA</a></li>
+    </ul>
+
+    <h1>CECATI 144 - Curso de instalación de paneles solares residenciales</h1>
+
+    <div class="w3-container w3-win8-lime">
+        <h2>¡Bienvenidos</h2>
+        <p> <h4>
+            <a> Al CECATI 144 le complace enormemente tenerlos aquí y estamos emocionados por comenzar esta nueva aventura con ustedes. En este curso, aprenderán todo lo necesario para dominar la instalación de sistemas fotovoltaicos interconectados a la red eléctrica, adquirirán habilidades valiosas que los preparará para el éxito en el mundo real.
+                Prepárense para una experiencia educativa dinámica y enriquecedora. No duden en hacer preguntas, colaborar con sus compañeros y aprovechar al máximo cada oportunidad de aprendizaje. ¡Estamos aquí para apoyarles en cada paso del camino!
+                ¡Bienvenidos a bordo!</h4></a><br>
+        </p>
+    </div>
+
+    <div class="quote" id="quote"></div>
+
+    <footer>
+        <p>&copy; 2024 sistema de valuación area aprovechamiento de energia - CECATI 144.</p>
+    </footer>
+
+    <script>
+        const quotes = [
+            "\"El silicio es el material fundamental de la revolución electrónica; es el corazón de la tecnología moderna.\" - Russell Ohl",
+            "\"El futuro pertenece a aquellos que creen en la belleza de sus sueños.\" - Eleanor Roosevelt",
+            "\"La educación es el pasaporte hacia el futuro, porque mañana pertenece a aquellos que se preparan hoy.\" - Malcolm X",
+            "\"No se puede vencer a alguien que nunca se rinde.\" - Babe Ruth",
+            "\"El aprendizaje es un tesoro que seguirá a su dueño a todas partes.\" - Proverbio chino",
+            "\"El esfuerzo de hoy es el éxito de mañana.\" - Desconocido",
+            "\"El esfuerzo constante, aunque pequeño, siempre rinde frutos grandes.\" - Confucio",
+            "\"La perseverancia es la clave del éxito. Cada obstáculo que enfrentas es una oportunidad para aprender y crecer. Nunca te rindas.\" - ",
+            "\"El camino al éxito está lleno de desafíos, pero cada paso que das te acerca a tu meta. No te rindas; la persistencia es el puente entre tus sueños y la realidad.\" - M. E. Kerr",
+            "\"El éxito es la suma de pequeños esfuerzos repetidos día tras día. Nunca dejes de avanzar.\" - Robert Collier",
+            "\"El esfuerzo constante y la dedicación son las semillas que cultivan el éxito. No hay atajos; lo que siembres hoy, cosecharás mañana.\" - Anónimo",
+            "\"Una buena actitud es como un imán; atrae oportunidades y transforma desafíos en triunfos. Mantén siempre una perspectiva positiva.\" - Anónimo",
+            "\"La electricidad es una fuerza universal, y el sol es su fuente.\" - Edmond Becquerel"
+        ];
+
+        // Selecciona una frase aleatoria
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById('quote').innerHTML = `<p class="w3-xlarge w3-serif"><i>${randomQuote}</i></p>`;
+    </script>
+
+</body>
+</html>
